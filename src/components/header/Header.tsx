@@ -25,6 +25,11 @@ const Header = () => (
             Home
           </HeaderLink>
         </ul>
+        <div className="d-flex">
+          <Link to="/login" className="btn btn-outline-primary">
+            Log in
+          </Link>
+        </div>
       </div>
     </div>
   </nav>
