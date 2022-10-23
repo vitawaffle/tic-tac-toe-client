@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
 
-import HeaderLink from '../header-link/HeaderLink';
+import HeaderLink from './HeaderLink';
 
 const Header = () => (
-  <nav className="navbar navbar-expand-lg bg-light mb-4">
+  <nav className="navbar navbar-expand-lg bg-light">
     <div className="container-fluid">
-      <Link to="/" className="navbar-brand">Tic-Tac-Toe</Link>
+      <Link to="/home" className="navbar-brand">
+        Tic-Tac-Toe
+      </Link>
       <button
         type="button"
         className="navbar-toggler"
@@ -19,7 +21,9 @@ const Header = () => (
       </button>
       <div id="headerContent" className="collapse navbar-collapse">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <HeaderLink to="/">Home</HeaderLink>
+          <HeaderLink to="/home">
+            Home
+          </HeaderLink>
         </ul>
       </div>
     </div>

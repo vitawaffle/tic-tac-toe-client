@@ -1,7 +1,7 @@
-import Layout from '../../shared/layout/Layout';
-import Header from '../../shared/header/header/Header';
+import Layout from '../../components/Layout';
+import Header from '../../components/header/Header';
 
-const HomeLayout = () => (
+const Home = () => (
   <>
     <Header />
     <Layout>
@@ -14,4 +14,4 @@ const HomeLayout = () => (
   </>
 );
 
-export default HomeLayout;
+export default Home;

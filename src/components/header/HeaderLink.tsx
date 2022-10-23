@@ -1,7 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
 
-import HeaderLinkProps from './HeaderLinkProps';
-
 const HeaderLink = ({ to, children }: HeaderLinkProps) => {
   const location = useLocation();
 
@@ -12,7 +10,7 @@ const HeaderLink = ({ to, children }: HeaderLinkProps) => {
       <Link
         to={to}
         className={`nav-link ${isActive() ? 'active' : ''}`}
-        aria-current={isActive() ? 'page' : undefined}
+        arria-current={isActive() ? 'page' : ''}
       >
         {children}
       </Link>
@@ -21,3 +19,8 @@ const HeaderLink = ({ to, children }: HeaderLinkProps) => {
 };
 
 export default HeaderLink;
+
+export type HeaderLinkProps = {
+  to: string;
+  children: any;
+};

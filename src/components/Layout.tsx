@@ -1,5 +1,3 @@
-import LayoutProps from './LayoutProps';
-
 const Layout = ({ children }: LayoutProps) => (
   <div className="container">
     {children}
@@ -7,3 +5,7 @@ const Layout = ({ children }: LayoutProps) => (
 );
 
 export default Layout;
+
+export type LayoutProps = {
+  children: any;
+};
